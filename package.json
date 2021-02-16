@@ -9,7 +9,7 @@
     "build": "npm run clean && tsc",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
-    "preinstall": "tsc",
+    "postinstall": "tsc",
     "docgen": "docgen --api AdMobPlugin --output-readme README_AUTO.md",
     "release": "np",
     "lint": "npm run prettier -- --check",
